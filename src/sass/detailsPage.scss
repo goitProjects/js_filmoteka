@@ -1,0 +1,91 @@
+.main__detailsPage {
+  width: 100%;
+}
+
+.main__detailsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__imgContainer {
+  width: 280px;
+  height: 420px;
+  background-color: rgb(201, 200, 200);
+}
+
+.main__textContainer {
+  width: 48%;
+}
+
+.main__detailsTable {
+  width: 100%;
+}
+
+.main__detailsTable>td {
+  padding: 0.5rem;
+}
+
+.main__detailsTextRow {
+  width: 100%;
+}
+
+.main__detailsTitle {
+  text-align: center;
+  font-size: 30px;
+  margin: 1rem 0;
+}
+
+.main__detailsAbout {
+  margin-bottom: 0.5rem;
+}
+
+.main__detailsTextRow:nth-child(odd) {
+  background-color: $main;
+}
+
+.main__detailsImg {
+  width: 280px;
+  height: 420px;
+}
+
+.main__addList {
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.main__addList>li:first-child {
+  margin-right: 2rem;
+}
+
+.main__addButton {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: $main;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: white;
+}
+
+.main__addButton:hover {
+  background-color: #40aaa1;
+}
+
+@media (max-width: 767px) {
+  .main__detailsContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__textContainer {
+    width: 100%;
+  }
+
+  .main__addList {
+    justify-content: center;
+  }
+}

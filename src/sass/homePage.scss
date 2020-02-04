@@ -1,0 +1,147 @@
+.main {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.main__form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.main__input {
+  width: 16rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.main__sectionFilms {
+  width: 100%;
+}
+
+.main__filmList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.main__plaginationsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__backButton,
+.main__nextButton {
+  border: 0;
+  outline: 0;
+  background-color: #77c1bb;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.main__backButton:hover,
+.main__nextButton:hover {
+  background-color: #40aaa1;
+}
+
+.main__plaginationPageNumber {
+  border: 3px solid #77c1bb;
+  padding: 0.5rem;
+  margin: 0 1rem;
+}
+
+.main__error {
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+// классы для созданнных javascript дом-узлов
+
+.main__filmListItem {
+  position: relative;
+  margin-bottom: 15px;
+  background-color: rgb(175, 171, 171);
+  width: 480px;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.main__filmListItemImg {
+  width: 480px;
+  height: 250px;
+  opacity: 0.95;
+  -moz-opacity: 0.95;
+  filter: alpha(opacity=95) black;
+  -khtml-opacity: 0.95;
+  background-color: #000;
+  border-radius: 1rem;
+}
+
+.main__filmListItemTitle {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: white;
+}
+
+@media (max-width: 1023px) {
+  .main {
+    width: 700px;
+    padding: 2rem 0;
+  }
+
+  .main__filmListItem {
+    width: 340px;
+    height: 177px;
+  }
+
+  .main__filmListItemImg {
+    width: 340px;
+    height: 177px;
+  }
+
+  .main__filmList {
+    margin-bottom: 1rem;
+  }
+
+  .main__form {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    width: 300px;
+    padding: 1rem 0;
+  }
+
+  .main__filmListItem {
+    width: 300px;
+    height: 156px;
+  }
+
+  .main__filmListItemImg {
+    width: 300px;
+    height: 156px;
+  }
+
+  .main__filmList {
+    margin-bottom: 0;
+  }
+}
